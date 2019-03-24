@@ -1,0 +1,93 @@
+body {
+    font:small Verdana, Helvetica, sans-serif;
+
+}
+
+#header {
+    background-color:#3d3d3d;
+    color: #ffffff;
+    word-spacing: 15px;
+    font-weight: bold;
+}
+
+#tableContainer {
+    display: table;
+    border-spacing: -5px 50 -5px 50px;
+    text-align: bottom;
+    border-collapse: collapse;
+    
+}
+
+#tableRow{
+    display: table-row;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+
+#tel {
+    display: table-cell;
+    background-image: url(images/images/icon_02.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+    vertical-align: top;
+    padding: 10px 50px 10px 30px;
+}
+
+#email {
+    display: table-cell;
+    background-image: url(images/images/icon_08.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+    vertical-align: top;
+    padding: 10px 50px 10px 30px;
+}
+
+#welcome{
+    padding: 10px 50px 10px 30px; 
+    vertical-align: middle; 
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+#register {
+    display: table-cell;
+    background-image: url(images/images/icon_05.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px;
+    vertical-align: top;
+    padding: 10px 50px 10px 30px;    
+}
+
+#headline {
+    background-image: url(images/images/logo_03.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 387px 87px;
+    margin: 20px 100px;
+    padding: 30px;
+    text-align: right;
+}
+.logo {
+     padding: 10px;
+     font-weight: bold
+}
+
+#Yechine {
+    color: #1ba19d;
+}
+
+#search{
+    background-image: url(images/images/背景_02.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1525px;
+    height: 376px;
+}
+
+.form {
+    background-color: #1ba19d;
+}
