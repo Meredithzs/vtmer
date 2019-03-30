@@ -1,0 +1,417 @@
+body {
+    font:small Verdana, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    flex-basis: 100%;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#3d3d3d;
+    color: #ffffff;
+    word-spacing: 15px;
+    font-weight: bold;
+    height: 30px;
+}
+
+#tel {
+    background-image: url(images/icon_02.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 23px;
+    padding: 10px 30px 10px 30px; 
+}
+
+#email {
+    background-image: url(images/icon_08.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+    vertical-align: top;
+    padding: 10px 200px 10px 30px;
+}
+
+#welcome{
+    padding: 10px 235px 10px 30px; 
+    vertical-align: middle; 
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+#register {
+    background-image: url(images/icon_05.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px;
+    padding: 10px 100px 10px 30px;    
+}
+
+#header a:link {
+    color: #fff;
+}
+
+#header a:visited {
+    color: #fff;
+}
+
+#header a:hover {
+    color: #1ba19d;
+}
+
+#headline {
+    display: block;
+    display: flex;
+    flex-basis: 100%;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#headline a:link {
+    color: #3d3d3d;
+}
+
+#headline a:hover {
+    color: #1ba19d;
+}
+
+#headline img {
+    margin: 7px 140px;
+}
+
+#contact {
+    margin: 7px 140px 7px 0px;
+}
+
+.search{
+    background-image: url(images/背景_02.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 250px 500px 100px;
+}
+
+.parent {
+    width: 100%;
+    height: 42px;
+}
+
+.parent>input:nth-of-type(even) {
+    width: 500px;
+    height: 40px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-size: small;
+    margin: 0 0 10px 100px;
+}
+
+.parent>input:nth-of-type(even):focus {
+    border: 1px solid #1ba19d;
+    padding-left: 1px;
+}
+
+.parent>input:nth-of-type(odd) {
+    width: 100px;
+    height: 44px; 
+    position: absolute;
+    background: #1ba19d;
+    background-image: url(images/icon_07.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-size: small;
+    padding:  0 10px;
+    border: 1px solid #1ba19d;
+    color: #fff;
+}
+
+.parent ::placeholder{
+    font-size: small;
+}
+
+.search p{
+    color: #fff;
+    margin: 0;
+}
+
+.search a:link {
+    color: #fff;
+}
+
+.search a:hover {
+    color: #1ba19d;
+}
+
+#right {  
+    width: 60px;
+    position: fixed;
+    right: 0%;
+    top: 60%;
+    background-color: #6d6c6c;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 3px 5px 3px;
+    font-size: small;
+}
+
+#right #chosen {
+    border-bottom: #fff 1px solid;
+    border-top: #fff 1px solid;
+}
+
+#right a:link{
+    color: #fff;
+}
+
+#right a:hover{
+    color: #1ba19d;
+}
+
+#right a.mouse {
+    position: relative;
+}
+
+.mouse ::after{
+    content: url(images/mouse.jpg);
+    position: absolute;
+    left: 10px;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #1ba19d;
+    border-radius: 4px;
+    transform-origin: top right;
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.mouse:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*居中设置*/
+#MF {
+    margin: 25px auto 0px;
+}
+/*更多资讯字体设置*/
+#MF #more {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #1ba19d;
+}
+
+#selectiontab {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+/*选项卡左栏设置*/
+#sec-ul {
+    vertical-align: top;
+    padding-right: 10px; 
+}
+
+ul {
+    width: 120px;
+    height: 160px;
+
+}
+
+ul>li {
+    width: 120px;
+    height: 30px;
+    letter-spacing: 1px;
+    background-color: #3d3d3d;
+    text-align: center;
+    padding-top: 10px; 
+    border-bottom: 2px solid #6d6c6c;
+    list-style-type: none; 
+    color: #fff;
+}
+/*选项卡内容设置*/
+.tech-box {
+    width: 500px;
+    height:100px;
+    color: #6d6c6c;
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+#MF img {
+    display: inline;
+    vertical-align: middle;
+}
+
+#MF .tech-t {
+    padding-left: 10px;
+    float: none;
+    display: inline;
+    vertical-align: top;
+}
+
+#MF.tech-box {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+}
+
+#MF .tabcard {
+    border: #6d6c6c 1px solid;
+    margin: 0 0 0 20px;
+}
+
+#MF .active {
+    background-color: #fff;
+    color: #3d3d3d;
+}
+
+#MF a {
+    text-align: right;
+}
+
+#MF a:link {
+    color: #1ba19d;
+}
+
+#MF a:hover {
+    color: #1ba19d;
+}
+
+#footer {
+    margin: 0 auto;
+    background: #fff;
+}
+.txt {
+    font-size: 12px;
+    line-height: 5px;
+    margin: 0;
+    line-height: 30px;
+    text-align: right;
+    font-weight: lighter;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer {
+    margin: 50px auto;
+    border-top: #3d3d3d 2px solid;
+    text-align: left;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#footer #tab1 {
+    background-image: url(images/一轮考核_03.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#footer #tab2 {
+    background-image: url(images/logo_13.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#footer #tab3 {
+    background-image: url(images/logo_15.png);
+    background-repeat: no-repeat;
+    background-position: 25px ;
+    padding-left: 15px;
+}
+
+#footer #tab4 {
+    background-image: url(images/logo_17.png);
+    background-position: 25px ;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+}
+
+#footer #tab5 {
+    background-image: url(images/logo_23.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#footer #tab6 {
+    background-image: url(images/logo_24.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#footer #tab7 {
+    background-image: url(images/logo_25.png);
+    background-position: 25px ;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+}
+
+#footer #tab8 {
+    background-image: url(images/logo_26.png);
+    background-position: 25px ;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+}
+
+#footer table {
+    border-collapse: collapse;
+    height: 150px;
+}
+
+#footer td th {
+    padding: 100px;
+}
+
+#footer table span {
+   padding: 0 0 0 17%;
+}
+
+#footer .white {
+    background-color: #ffffff;
+    color: #3d3d3d;
+}
+
+#footer .black {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+#footer .white a:link{
+    color: #3d3d3d;
+}
+
+#footer .white a:hover{
+    color: #1ba19d;
+}
+
+#footer .black a:link{
+    color: #fff;
+}
+
+#footer .black a:hover{
+    color: #1ba19d;
+}
